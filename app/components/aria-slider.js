@@ -1,0 +1,1 @@
+export { default } from 'ember-aria-slider/components/aria-slider';

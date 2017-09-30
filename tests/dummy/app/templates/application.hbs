@@ -1,5 +1,31 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<h1>ember-aria-slider</h1>
+<div class="two-column">
+  <section id="left">
+    <h3>RED</h3>
+    {{aria-slider
+      minValue=0
+      maxValue=255
+      currentValue=red
+    }}
+    <h3>GREEN</h3>
+    {{aria-slider
+      minValue=0
+      maxValue=255
+      currentValue=green
+    }}
+    <h3>BLUE</h3>
+    {{aria-slider
+      minValue=0
+      maxValue=255
+      currentValue=blue
+    }}
+  </section>
+  <section id="right">
+    <div id="idColorInfo">
+      <div id="idColorBox" style="background-color: rgb({{red}}, {{green}}, {{blue}});"></div>
+      <label>Color (HEX): <input readonly="" id="idColorValueHex" value={{hex}} type="text"></label>
+      <label>Color (RGB): <input readonly="" id="idColorValueRGB" value={{rgb}} type="text"></label>
+    </div>
+  </section>
+</div>
 {{outlet}}
