@@ -1,6 +1,6 @@
 {
   "name": "ember-aria-slider",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An accessible slider component in Ember based on WAI-ARIA practices",
   "keywords": [
     "ember-addon",
