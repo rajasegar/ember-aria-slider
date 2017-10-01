@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "An accessible slider component in Ember based on WAI-ARIA practices",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "slider",
+    "aria",
+    "slider-component"
   ],
   "license": "MIT",
   "author": "Rajasegar Chandran",
@@ -52,6 +55,7 @@
     "node": ">= 4"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://rajasegar.github.io/ember-aria-slider"
   }
 }
