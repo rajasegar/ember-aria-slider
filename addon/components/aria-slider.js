@@ -4,11 +4,11 @@ import layout from '../templates/components/aria-slider';
 export default Ember.Component.extend({
   layout,
   classNames: ['aria-widget-slider'],
-  focus() {
+  focusIn() {
     this.set('focusClass', 'focus');
   },
 
-  blur() {
+  focusOut() {
     this.set('focusClass', '');
   }
 });

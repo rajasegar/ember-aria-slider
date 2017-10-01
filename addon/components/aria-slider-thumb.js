@@ -130,11 +130,11 @@ export default Component.extend({
     e.target.focus();
   },
 
-  focus() {
+  focusIn() {
     this.set('focusClass', true);
   },
 
-  blur() {
+  focusOut() {
     this.set('focusClass', false);
   },
 

@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import { focus, find } from 'ember-native-dom-helpers';
 
 moduleForComponent('aria-slider', 'Integration | Component | aria slider', {
   integration: true
@@ -59,3 +60,19 @@ test('it should have a value=currentValue', function(assert) {
   this.render(hbs`{{aria-slider currentValue=50}}`);
   assert.equal(this.$('.value').text().trim(), '50');
 });
+
+test('it should have focus class if focus set', async function(assert) {
+
+  this.render(hbs`{{aria-slider
+    minValue=0
+    maxValue=100
+    currentValue=50
+  }}<div id="otherElement" tabindex="1"></div>`);
+
+  assert.notOk(find('.rail.focus'));
+  await focus('.rail');
+  assert.ok(find('.rail.focus'));
+  await focus('#otherElement');
+  // assert.notOk(find('.rail.focus'));
+});
+
