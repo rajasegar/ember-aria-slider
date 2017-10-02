@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/rajasegar/ember-aria-slider.svg?branch=master)](https://travis-ci.org/rajasegar/ember-aria-slider) 
 [![Coverage Status](https://coveralls.io/repos/github/rajasegar/ember-aria-slider/badge.svg?branch=master)](https://coveralls.io/github/rajasegar/ember-aria-slider?branch=master)
-[![npm](https://img.shields.io/npm/dm/ember-aria-slider.svg)](https://www.npmjs.com/package/ember-aria-slider)
 [![npm version](http://img.shields.io/npm/v/ember-aria-slider.svg?style=flat)](https://npmjs.org/package/ember-aria-slider "View this project on npm")
 [![dependencies Status](https://david-dm.org/rajasegar/ember-aria-slider/status.svg)](https://david-dm.org/rajasegar/ember-aria-slider)
 [![devDependencies Status](https://david-dm.org/rajasegar/ember-aria-slider/dev-status.svg)](https://david-dm.org/rajasegar/ember-aria-slider?type=dev)
@@ -31,6 +30,17 @@ Example Markup:
       currentValue=50
     }}
 ```
+
+## Properties
+
+### minValue [ NUMBER ]
+Minimum value for the slider
+
+### maxValue [ NUMBER ]
+Minimum value for the slider
+
+### currentValue [ NUMBER ]
+Current value for the slider 
 
 ## Running
 

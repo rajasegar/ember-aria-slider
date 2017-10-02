@@ -1,44 +1,55 @@
 /* CSS Document */
+:root {
+    --slider-bg: #eee;
+    --slider-border: #888;
+    --slider-thumb-border: var(--slider-border);
+    --slider-thumb-top-border: #666;
+    --slider-thumb-left-border: var(--slider-thumb-top-border);
+    --slider-thumb-bg: #ddd;
+    --slider-thumb-active-bg: #def;
+    --slider-thumb-active-outline: #888;
+    --slider-active-bg: #aaa;
+}
 
-div.aria-widget-slider {
+.aria-widget-slider {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     height: 4em;
 }
 
-div.aria-widget-slider .rail {
+.aria-widget-slider .rail {
     margin: 2px;
     padding: 1px;
-    background-color: #eee;
-    border: 1px solid #888;
+    background-color: var(--slider-bg);
+    border: 1px solid var(--slider-border);
     position: relative;
     top: 2em;
     height: 4px;
     width: 300px;
 }
 
-div.aria-widget-slider .thumb  {
-    border: 1px solid #888;
-    border-top-color:  #666;
-    border-left-color: #666;
-    background-color: #DDD;
+.aria-widget-slider .thumb  {
+    border: 1px solid var(--slider-thumb-border);
+    border-top-color:  var(--slider-thumb-top-border);
+    border-left-color: var(--slider-thumb-left-border);
+    background-color: var(--slider-thumb-bg);
     position: relative;
     width:8px;
     height:28px;
     top:-14px;
 }
 
-div.aria-widget-slider .rail .thumb.focus,
-div.aria-widget-slider .rail .thumb:hover {
-    outline: 2px solid #888;
-    background-color: #DEF;
+.aria-widget-slider .rail .thumb.focus,
+.aria-widget-slider .rail .thumb:hover {
+    outline: 2px solid var(--slider-thumb-active-outline);
+    background-color: var(--slider-thumb-active-bg);
 }
 
-div.aria-widget-slider .rail.focus {
-    background-color: #AAA;
+.aria-widget-slider .rail.focus {
+    background-color: var(--slider-active-bg);
 }
 
-div.aria-widget-slider .value  {
+.aria-widget-slider .value  {
     width:      2em;
     text-align: right;
     position: absolute;
@@ -46,20 +57,3 @@ div.aria-widget-slider .value  {
     top: -5px;
 }
 
-label {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-#idColorBox {
-	  width: 200px;
-	  height: 200px;
-	  border: black solid medium;
-	  text-align: center;
-	  padding: 0.25em;
-}
-
-#idColorInfo {
-	  padding-top: 5px;
-}
