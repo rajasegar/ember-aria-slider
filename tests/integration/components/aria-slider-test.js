@@ -1,4 +1,4 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { moduleForComponent, test, skip } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import { focus, find } from 'ember-native-dom-helpers';
 
@@ -61,7 +61,7 @@ test('it should have a value=currentValue', function(assert) {
   assert.equal(this.$('.value').text().trim(), '50');
 });
 
-test('it should have focus class if focus set', async function(assert) {
+skip('it should have focus class if focus set', async function(assert) {
 
   this.render(hbs`{{aria-slider
     minValue=0
@@ -73,6 +73,6 @@ test('it should have focus class if focus set', async function(assert) {
   await focus('.rail');
   assert.ok(find('.rail.focus'));
   await focus('#otherElement');
-  // assert.notOk(find('.rail.focus'));
+  assert.notOk(find('.rail.focus'));
 });
 

@@ -204,7 +204,7 @@ test('it should set current value to minValue when currentValue < minValue', fun
 
 });
 
-test('it should set current value to maxValue when currentValue > maxValue', function(assert) {
+test('it should set current value to maxValue when currentValue > maxValue', async function(assert) {
 
   this.set('currentValue', 500);
 
@@ -266,6 +266,7 @@ test('it should have focus class if focus set', async function(assert) {
     maxValue=100
     currentValue=50
   }}<div id="otherElement" tabindex="1"></div>`);
+
 
   assert.notOk(find('.focus'));
   await focus('.thumb');

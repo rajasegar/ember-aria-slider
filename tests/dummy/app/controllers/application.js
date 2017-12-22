@@ -1,10 +1,6 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { computed } from '@ember/object';
 import toHex from '../utils/to-hex';
-
-const {
-  Controller,
-  computed
-} = Ember;
 
 export default Controller.extend({
   red: 0,

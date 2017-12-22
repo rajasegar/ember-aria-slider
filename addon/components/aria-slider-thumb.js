@@ -1,10 +1,7 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../templates/components/aria-slider-thumb';
-
-const {
-  Component,
-  computed
-} = Ember;
+import { run } from '@ember/runloop';
 
 const RAIL_WIDTH = 300;
 
@@ -140,10 +137,9 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-  },
-
-  didRender() {
-    this.moveSliderTo(this.get('currentValue'));
+    run.schedule('afterRender', () => {
+      this.moveSliderTo(this.get('currentValue'));
+    });
   },
 
   moveSliderTo(value) {
@@ -172,7 +168,7 @@ export default Component.extend({
     left = pos + 'px';
     // console.log("left = ", left);
 
-    this.$().css('left', left);
+    this.element.style.left = left;
 
   }
 });
