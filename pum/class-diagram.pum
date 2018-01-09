@@ -1,0 +1,26 @@
+@startuml
+"Ember.Component" <|-- SliderThumb
+"Ember.Component" <|-- Slider
+
+class SliderThumb {
+  role : String
+  tabindex : Integer
+  focusClass : Boolean
+  valueText : String
+
+  keyDown()
+  mouseDown()
+  focusIn()
+  focusOut()
+  moveSliderTo()
+  init()
+
+}
+
+class Slider {
+  focusIn()
+  focusOut()
+}
+
+
+@enduml

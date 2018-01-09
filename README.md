@@ -10,6 +10,8 @@
 An Ember Slider addon based on WAI-ARIA Authoring practices.
 For more info, click [here](https://www.w3.org/TR/wai-aria-practices/#slider)
 
+
+
 ## Demo
 
 [Demo](http://rajasegar.github.io/ember-aria-slider/)
@@ -41,6 +43,13 @@ Minimum value for the slider
 
 ### currentValue [ NUMBER ]
 Current value for the slider 
+
+## Class Diagram
+![Class Diagram](https://raw.githubusercontent.com/rajasegar/ember-aria-slider/master/pum/class-diagram.png)
+
+## Component interface
+
+![Component Interface](https://raw.githubusercontent.com/rajasegar/ember-aria-slider/master/pum/component.png)
 
 ## Running
 

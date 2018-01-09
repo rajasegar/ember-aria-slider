@@ -1,0 +1,6 @@
+@startuml
+package "ember-aria-slider" {
+[slider]
+[sliderthumb]
+}
+@enduml
