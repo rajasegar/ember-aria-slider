@@ -1,5 +1,15 @@
 @startuml
-[ARIASlider] --> maxValue
-[ARIASlider] --> minValue
-[ARIASlider] --> currentValue
+() "maxValue" as maxValue
+() "minValue" as minValue
+() "currentValue" as currentValue
+maxValue - [Slider]
+minValue - [Slider]
+currentValue - [Slider]
+
+[SliderThumb] <.. maxValue : data-down
+[SliderThumb] <.. minValue : data-down
+[SliderThumb] <.. currentValue : data-down
+labelledBy - [SliderThumb]
+units - [SliderThumb]
+unitPrefix - [SliderThumb]
 @enduml
