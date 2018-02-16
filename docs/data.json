@@ -2,7 +2,7 @@
     "project": {
         "name": "ember-aria-slider",
         "description": "The default blueprint for ember-cli addons.",
-        "version": "v0.1.8"
+        "version": "v0.1.9"
     },
     "files": {},
     "modules": {},
