@@ -11,6 +11,8 @@ An Ember Slider addon based on WAI-ARIA Authoring practices.
 For more info, click [here](https://www.w3.org/TR/wai-aria-practices/#slider)
 
 
+### Tutorial
+There is also a tutorial available [here](http://hangaroundtheweb.com/2018/01/how-to-create-an-accessible-slider-component-in-ember/) to learn how to create this addon from scratch.
 
 ## Demo
 

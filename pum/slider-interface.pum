@@ -1,0 +1,5 @@
+@startuml
+[Slider] --> maxValue
+[Slider] --> minValue
+[Slider] --> currentValue
+@enduml
