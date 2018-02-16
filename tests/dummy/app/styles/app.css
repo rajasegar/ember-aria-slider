@@ -66,3 +66,9 @@ label {
 .blue-slider .rail.focus {
     background-color: blue;
 }
+
+.v-center {
+    display:block;
+    margin: 0 auto;
+    text-align:center;
+}
