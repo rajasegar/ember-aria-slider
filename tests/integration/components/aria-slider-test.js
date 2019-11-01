@@ -1,6 +1,8 @@
 import { moduleForComponent, test, skip } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import { focus, find } from 'ember-native-dom-helpers';
+import a11yAudit from 'ember-a11y-testing/test-support/audit';
+
 
 moduleForComponent('aria-slider', 'Integration | Component | aria slider', {
   integration: true
@@ -76,3 +78,14 @@ skip('it should have focus class if focus set', async function(assert) {
   assert.notOk(find('.rail.focus'));
 });
 
+test('accessibility check', async function (assert) {
+  this.render(hbs`{{aria-slider
+    minValue=0
+    maxValue=100
+    currentValue=50
+  }}<div id="otherElement" tabindex="0"></div>`);
+
+
+  await a11yAudit();
+  assert.ok(true, 'no a11y errors found!');
+});
