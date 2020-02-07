@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-aria-slider'
+  name: require('./package').name
 };

@@ -6,6 +6,10 @@ export default Controller.extend({
   red: 0,
   green: 0,
   blue: 0,
+  style: computed('red','green','blue', function() {
+    
+return `background-color: rgb(${this.get('red')}, ${this.get('green')}, ${this.get('blue')})`;
+  }),
   rgb: computed('red', 'green', 'blue', function() {
     return `${this.get('red')}, ${this.get('green')}, ${this.get('blue')}`;
   }),

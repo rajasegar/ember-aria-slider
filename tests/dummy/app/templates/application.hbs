@@ -25,7 +25,9 @@
   </section>
   <section id="right">
     <div id="idColorInfo">
-      <div id="idColorBox" style="background-color: rgb({{red}}, {{green}}, {{blue}});"></div>
+      {{!-- template-lint-disable --}}
+      <div id="idColorBox" style={{style}}></div>
+      {{!-- template-lint-enable --}}
       <label>Color (HEX): <input readonly="" id="idColorValueHex" value={{hex}} type="text"></label>
       <label>Color (RGB): <input readonly="" id="idColorValueRGB" value={{rgb}} type="text"></label>
     </div>

@@ -18,6 +18,17 @@ There is also a tutorial available [here](http://hangaroundtheweb.com/2018/01/ho
 
 [Demo](http://rajasegar.github.io/ember-aria-slider/)
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+
+Installation
+------------------------------------------------------------------------------
+
 
 ## Installation
 
@@ -59,6 +70,8 @@ Current value for the slider
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Running Tests
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
