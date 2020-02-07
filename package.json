@@ -20,6 +20,7 @@
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint .",
+    "lint:js": "eslint .",
     "start": "ember server",
     "test": "ember test",
     "coverage": "COVERAGE=true ember t",
