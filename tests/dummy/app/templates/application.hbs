@@ -2,6 +2,7 @@
 <div class="two-column">
   <section id="left">
     <h3>RED</h3>
+    v
     {{aria-slider
       minValue=0
       maxValue=255
@@ -25,9 +26,7 @@
   </section>
   <section id="right">
     <div id="idColorInfo">
-      {{!-- template-lint-disable --}}
-      <div id="idColorBox" style={{style}}></div>
-      {{!-- template-lint-enable --}}
+      <div id="idColorBox" style={{backgroundColor}} {{!-- template-lint-disable --}}></div>
       <label>Color (HEX): <input readonly="" id="idColorValueHex" value={{hex}} type="text"></label>
       <label>Color (RGB): <input readonly="" id="idColorValueRGB" value={{rgb}} type="text"></label>
     </div>
