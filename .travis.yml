@@ -1,13 +1,9 @@
 ---
 language: node_js
 node_js:
-<<<<<<< HEAD
-  - "6"
-=======
   # we recommend testing addons with the same minimum supported node version as Ember CLI
   # so that your addon works for all apps
   - "8"
->>>>>>> fa9c823... message
 
 sudo: required
 
@@ -18,35 +14,6 @@ cache:
 dist: trusty
 
 env:
-<<<<<<< HEAD
-  # we recommend testing LTS's and latest stable release (bonus points to beta/canary)
-  - EMBER_TRY_SCENARIO=ember-lts-2.18.2
-  - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-default
-
-matrix:
-  fast_finish: true
-
-before_install:
-  - npm config set spin false
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-
-install:
-  - npm install
-
-
-script:
-  # Usually, it's ok to finish the test scenario without reverting
-  #  to the addon's original dependency state, skipping "cleanup".
-  - npm test
-  - npm run coverage
-
-after_success:
-  - npm run coveralls
-
-addons:
-  chrome: stable
-=======
   global:
     # See https://git.io/vdao3 for details.
     - JOBS=1
@@ -84,4 +51,3 @@ jobs:
 
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
->>>>>>> fa9c823... message
